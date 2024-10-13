@@ -1,0 +1,88 @@
+INSERT INTO admin(reg_no, purpose, appointment) VALUES(2022506002, "cold", "12.30-tuesday");
+INSERT INTO admin(reg_no, purpose, appointment) VALUES(2022506003, "flu", "14.00-monday");
+INSERT INTO admin(reg_no, purpose, appointment) VALUES(2022506004, "checkup", "09.00-wednesday");
+INSERT INTO admin(reg_no, purpose, appointment) VALUES(2022506005, "allergy", "10.30-thursday");
+INSERT INTO admin(reg_no, purpose, appointment) VALUES(2022506006, "headache", "11.00-friday");
+INSERT INTO admin(reg_no, purpose, appointment) VALUES(2022506007, "stomach ache", "15.00-tuesday");
+INSERT INTO admin(reg_no, purpose, appointment) VALUES(2022506008, "cough", "08.00-monday");
+INSERT INTO admin(reg_no, purpose, appointment) VALUES(2022506009, "fever", "16.00-wednesday");
+INSERT INTO admin(reg_no, purpose, appointment) VALUES(2022506010, "vaccination", "13.00-thursday");
+INSERT INTO admin(reg_no, purpose, appointment) VALUES(2022506011, "consultation", "10.00-friday");
+
+MariaDB [healthcare]> select * from admin;
++------------+--------------+-----------------+
+| reg_no     | purpose      | appointment     |
++------------+--------------+-----------------+
+| 2022506001 | cold         | 12.30-tuesday   |
+| 2022506002 | cold         | 12.30-tuesday   |
+| 2022506003 | flu          | 14.00-monday    |
+| 2022506004 | checkup      | 09.00-wednesday |
+| 2022506005 | allergy      | 10.30-thursday  |
+| 2022506006 | headache     | 11.00-friday    |
+| 2022506007 | stomach ache | 15.00-tuesday   |
+| 2022506008 | cough        | 08.00-monday    |
+| 2022506009 | fever        | 16.00-wednesday |
+| 2022506010 | vaccination  | 13.00-thursday  |
+| 2022506011 | consultation | 10.00-friday    |
++------------+--------------+-----------------+
+11 rows in set (0.028 sec)
+
+MariaDB [healthcare]>select * from student;
+MariaDB [healthcare]> select * from student;
++-------------+------------+------+------+------------+------+------------+---------+---------------+------------------+------------+----------------+---------------+----------------+-----------+-------------+-----------+
+| NAME        | reg_no     | year | bp   | bloodgroup | bmi  | phone_no   | allergy | guardian_Name | guardian_contact | username   | password       | patient_place | hospital_place | ambulance | purpose     | treatment |
++-------------+------------+------+------+------------+------+------------+---------+---------------+------------------+------------+----------------+---------------+----------------+-----------+-------------+-----------+
+| Varun       | 2022506103 |    1 |  115 | A+         |   20 | 9506873452 | fish    | RAGU          | 9257297087       | 2022506103 | Vani@123       | NULL          | NULL           |           | oil allergy | Tablet    |
+| Ram         | 2022304232 |    1 | NULL | A+         |   20 | 9092762739 | none    | laxi          | 9823423423       | 2022304232 | Ram@1234       | NULL          | NULL           | NULL      | NULL        | NULL      |
+| vani venkat | 2022506105 |    2 |  115 | B+         |   23 | 9845468345 | dest    | VENKAT        | 9789238644       | 2022506105 | Vani@105       | ponni hostal  | annex          |           | cold        | tablet    |
+| Ragu        | 2022506043 |    1 |  105 | A+         |   25 | 9845468345 | none    | eswaran       | 9257297087       | 2022506043 | Vani@232       | NULL          | NULL           |           |  Allergy    | Tablet    |
+| Ragu        | 2022506043 |    1 |  105 | A+         |   25 | 9845468345 | none    | eswaran       | 9257297087       | 2022506043 | Vani@232       | NULL          | NULL           |           |  Allergy    | Tablet    |
+| Ragu        | 2022506043 |    1 |  105 | A+         |   25 | 9845468345 | none    | eswaran       | 9257297087       | 2022506043 | Ragu@123       | NULL          | NULL           |           |  Allergy    | Tablet    |
+| Ragu        | 2022506043 |    1 |  105 | A+         |   25 | 9845468345 | none    | eswaran       | 9257297087       | 2022506043 | Ragu@123       | NULL          | NULL           |           |  Allergy    | Tablet    |
+| Ragu        | 2022506043 |    1 | NULL | A+         |   25 | 9845468345 | none    | eswaran       | 9257297087       | 2022506043 | Ragu@123       | NULL          | NULL           | NULL      | NULL        | NULL      |
+| NULL        | 2022506043 | NULL | NULL | NULL       | NULL | NULL       | NULL    | NULL          | NULL             | 2022506043 | Ragu@123       | NULL          | NULL           | NULL      | NULL        | NULL      |
+| Varun       | 2022506103 |    1 |  115 | A+         |   20 | 9506873452 | fish    | RAGU          | 9257297087       | 2022506103 | Vani@123       | NULL          | NULL           | NULL      | oil allergy | Tablet    |
+| Varun       | 2022506103 |    1 |  115 | A+         |   20 | 9506873452 | fish    | RAGU          | 9257297087       | 2022506103 | Vani@123       | NULL          | NULL           | NULL      | oil allergy | Tablet    |
+| Anika       | 2022506104 |    2 |  120 | B+         |   22 | 9506873453 | peanuts | ANIL          | 9257297088       | 2022506104 | Password2@123  | NULL          | NULL           | NULL      | fever       | Injection |
+| Rahul       | 2022506105 |    3 |  110 | O+         |   24 | 9506873454 | dust    | VIJAY         | 9257297089       | 2022506105 | Password3@123  | NULL          | NULL           | NULL      | headache    | Syrup     |
+| Priya       | 2022506106 |    4 |  130 | AB+        |   18 | 9506873455 | pollen  | SURESH        | 9257297090       | 2022506106 | Password4@123  | NULL          | NULL           | NULL      | checkup     | Rest      |
+| Karan       | 2022506107 |    1 |  125 | A-         |   26 | 9506873456 | lactose | KIRAN         | 9257297091       | 2022506107 | Password5@123  | NULL          | NULL           | NULL      | vaccination | Surgery   |
+| Sneha       | 2022506108 |    2 |  115 | A+         |   20 | 9506873457 | fish    | RAGU          | 9257297087       | 2022506108 | Password6@123  | NULL          | NULL           | NULL      | oil allergy | Tablet    |
+| Arjun       | 2022506109 |    3 |  120 | B+         |   22 | 9506873458 | peanuts | ANIL          | 9257297088       | 2022506109 | Password7@123  | NULL          | NULL           | NULL      | fever       | Injection |
+| Meera       | 2022506110 |    4 |  110 | O+         |   24 | 9506873459 | dust    | VIJAY         | 9257297089       | 2022506110 | Password8@123  | NULL          | NULL           | NULL      | headache    | Syrup     |
+| Vikas       | 2022506111 |    1 |  130 | AB+        |   18 | 9506873460 | pollen  | SURESH        | 9257297090       | 2022506111 | Password9@123  | NULL          | NULL           | NULL      | checkup     | Rest      |
+| Divya       | 2022506112 |    2 |  125 | A-         |   26 | 9506873461 | lactose | KIRAN         | 9257297091       | 2022506112 | Password10@123 | NULL          | NULL           | NULL      | vaccination | Surgery   |
++-------------+------------+------+------+------------+------+------------+---------+---------------+------------------+------------+----------------+---------------+----------------+-----------+-------------+-----------+
+20 rows in set (0.001 sec)
+
+MariaDB [healthcare]>
+INSERT INTO student(NAME, reg_no, year, bp, bloodgroup, bmi, phone_no, allergy, guardian_Name, guardian_contact, username, password, patient_place, hospital_place, ambulance, purpose, treatment) 
+VALUES('Varun', 2022506103, 1, 115, 'A+', 20, '9506873452', 'fish', 'RAGU', '9257297087', '2022506103', 'Vani@123', NULL, NULL, NULL, 'oil allergy', 'Tablet');
+
+INSERT INTO student(NAME, reg_no, year, bp, bloodgroup, bmi, phone_no, allergy, guardian_Name, guardian_contact, username, password, patient_place, hospital_place, ambulance, purpose, treatment) 
+VALUES('Anika', 2022506104, 2, 120, 'B+', 22, '9506873453', 'peanuts', 'ANIL', '9257297088', '2022506104', 'Password2@123', NULL, NULL, NULL, 'fever', 'Injection');
+
+INSERT INTO student(NAME, reg_no, year, bp, bloodgroup, bmi, phone_no, allergy, guardian_Name, guardian_contact, username, password, patient_place, hospital_place, ambulance, purpose, treatment) 
+VALUES('Rahul', 2022506105, 3, 110, 'O+', 24, '9506873454', 'dust', 'VIJAY', '9257297089', '2022506105', 'Password3@123', NULL, NULL, NULL, 'headache', 'Syrup');
+
+INSERT INTO student(NAME, reg_no, year, bp, bloodgroup, bmi, phone_no, allergy, guardian_Name, guardian_contact, username, password, patient_place, hospital_place, ambulance, purpose, treatment) 
+VALUES('Priya', 2022506106, 4, 130, 'AB+', 18, '9506873455', 'pollen', 'SURESH', '9257297090', '2022506106', 'Password4@123', NULL, NULL, NULL, 'checkup', 'Rest');
+
+INSERT INTO student(NAME, reg_no, year, bp, bloodgroup, bmi, phone_no, allergy, guardian_Name, guardian_contact, username, password, patient_place, hospital_place, ambulance, purpose, treatment) 
+VALUES('Karan', 2022506107, 1, 125, 'A-', 26, '9506873456', 'lactose', 'KIRAN', '9257297091', '2022506107', 'Password5@123', NULL, NULL, NULL, 'vaccination', 'Surgery');
+
+INSERT INTO student(NAME, reg_no, year, bp, bloodgroup, bmi, phone_no, allergy, guardian_Name, guardian_contact, username, password, patient_place, hospital_place, ambulance, purpose, treatment) 
+VALUES('Sneha', 2022506108, 2, 115, 'A+', 20, '9506873457', 'fish', 'RAGU', '9257297087', '2022506108', 'Password6@123', NULL, NULL, NULL, 'oil allergy', 'Tablet');
+
+INSERT INTO student(NAME, reg_no, year, bp, bloodgroup, bmi, phone_no, allergy, guardian_Name, guardian_contact, username, password, patient_place, hospital_place, ambulance, purpose, treatment) 
+VALUES('Arjun', 2022506109, 3, 120, 'B+', 22, '9506873458', 'peanuts', 'ANIL', '9257297088', '2022506109', 'Password7@123', NULL, NULL, NULL, 'fever', 'Injection');
+
+INSERT INTO student(NAME, reg_no, year, bp, bloodgroup, bmi, phone_no, allergy, guardian_Name, guardian_contact, username, password, patient_place, hospital_place, ambulance, purpose, treatment) 
+VALUES('Meera', 2022506110, 4, 110, 'O+', 24, '9506873459', 'dust', 'VIJAY', '9257297089', '2022506110', 'Password8@123', NULL, NULL, NULL, 'headache', 'Syrup');
+
+INSERT INTO student(NAME, reg_no, year, bp, bloodgroup, bmi, phone_no, allergy, guardian_Name, guardian_contact, username, password, patient_place, hospital_place, ambulance, purpose, treatment) 
+VALUES('Vikas', 2022506111, 1, 130, 'AB+', 18, '9506873460', 'pollen', 'SURESH', '9257297090', '2022506111', 'Password9@123', NULL, NULL, NULL, 'checkup', 'Rest');
+
+INSERT INTO student(NAME, reg_no, year, bp, bloodgroup, bmi, phone_no, allergy, guardian_Name, guardian_contact, username, password, patient_place, hospital_place, ambulance, purpose, treatment) 
+VALUES('Divya', 2022506112, 2, 125, 'A-', 26, '9506873461', 'lactose', 'KIRAN', '9257297091', '2022506112', 'Password10@123', NULL, NULL, NULL, 'vaccination', 'Surgery');
+
